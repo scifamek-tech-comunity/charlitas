@@ -1,6 +1,7 @@
-import { GottenValidUsersSTR } from "./domain-events";
+import { GottenValidUsersSTR, NotifiedUsersSTR } from "./domain-events";
 import { User } from "./models";
 import { GetValidUsersUsecase } from "./usecases/get-valid-users.usecase";
+import { NotifyUsersUsecase } from "./usecases/notify-users.usecase";
 
 const users: User[] = [
   {
@@ -31,4 +32,12 @@ if ((validUsersDE.code = GottenValidUsersSTR)) {
   console.log("Los usuarios validos son " + validUsersDE.payload);
 } else {
   console.log("Error en el sistema. ");
+}
+
+const notifyUsersUsecase = new NotifyUsersUsecase(getValidUsersUsecase);
+const notifiedUsersDE = notifyUsersUsecase.call(users);
+if ((notifiedUsersDE.code = NotifiedUsersSTR)) {
+  console.log("Los usuarios notificados son " + validUsersDE.payload);
+} else {
+  console.log(notifiedUsersDE.code);
 }

@@ -1,6 +1,6 @@
-import { DomainEvent, GenericUsecase } from "src/core";
-import { GottenValidUsersSTR } from "src/domain-events";
-import { User } from "src/models";
+import { DomainEvent, GenericUsecase } from "../core";
+import { GottenValidUsersSTR } from "../domain-events";
+import { User } from "../models";
 
 export class GetValidUsersUsecase extends GenericUsecase<User[]> {
   call(users: User[]): DomainEvent {

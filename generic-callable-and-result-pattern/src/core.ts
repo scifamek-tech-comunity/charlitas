@@ -1,6 +1,6 @@
-export interface DomainEvent {
+export interface DomainEvent<T = any> {
   code: string;
-  payload: any;
+  payload: T;
 }
 
 export abstract class GenericUsecase<P> {

@@ -7,3 +7,4 @@
 - **cf179cf**: Creación de genérico paramétrico
 - **a094cc6**: Creación de clase genérica tipo callable
 - **a262123**: Uso de Either
+- **6ad18ef**: Creando caso de uso aplicando conceptos
