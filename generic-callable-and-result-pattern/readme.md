@@ -8,3 +8,4 @@
 - **a094cc6**: Creación de clase genérica tipo callable
 - **a262123**: Uso de Either
 - **6ad18ef**: Creando caso de uso aplicando conceptos
+- **c4b2041**: Mejorando el domainEvent y componiendo usecases
