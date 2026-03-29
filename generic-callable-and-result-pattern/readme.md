@@ -1,0 +1,1 @@
+## Genéricos, callable, y patrón result
