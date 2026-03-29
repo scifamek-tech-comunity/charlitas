@@ -3,3 +3,4 @@
 
 ## Commits
 
+- **81c80ed**: Definición de interfaces
