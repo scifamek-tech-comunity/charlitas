@@ -40,7 +40,7 @@ notifyUserFN(Santiago);
 
 class Notifier<T> {
   call(user: T): boolean {
-    console.log(`Enviando notificación push al teléfono: ${user['phone']}`);
+    console.log(`Enviando notificación push al teléfono: ${user["phone"]}`);
     return true;
   }
 }
@@ -48,3 +48,42 @@ class Notifier<T> {
 const myAWSNotifier = new Notifier();
 const notifierResponse = myAWSNotifier.call(Jimmy);
 console.log("Respuesta de mi notifier: " + notifierResponse);
+
+interface Either {
+  code: string;
+  payload: any;
+}
+
+class GoodNotifier<T> {
+  call(user: T): Either {
+    console.log(`Enviando notificación push al teléfono: ${user["phone"]}`);
+    return {
+      code: "Sent",
+      payload: true,
+    };
+  }
+}
+
+const SentMessage: Either = {
+  code: "Sent",
+  payload: true,
+};
+const NotSentMessage: Either = {
+  code: "NotSent",
+  payload: false,
+};
+
+class BetterNotifier<T> {
+  call(user: T): Either {
+    console.log(`Enviando notificación push al teléfono: ${user["phone"]}`);
+    return SentMessage;
+  }
+}
+
+const myBetterNotifier = new BetterNotifier();
+const myBetterNotifierResponse = myBetterNotifier.call(Santiago);
+if (myBetterNotifierResponse.code == SentMessage.code) {
+  console.log("Éxito amigos");
+} else {
+  console.log("El celular está apagado");
+}

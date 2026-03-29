@@ -5,3 +5,4 @@
 
 - **81c80ed**: Definición de interfaces
 - **cf179cf**: Creación de genérico paramétrico
+- **a094cc6**: Creación de clase genérica tipo callable
