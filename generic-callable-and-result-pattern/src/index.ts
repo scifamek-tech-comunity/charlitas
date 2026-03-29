@@ -37,3 +37,14 @@ function notifyUserFN<T extends User>(user: T): boolean {
 
 notifyUserFN(Jimmy);
 notifyUserFN(Santiago);
+
+class Notifier<T> {
+  call(user: T): boolean {
+    console.log(`Enviando notificación push al teléfono: ${user['phone']}`);
+    return true;
+  }
+}
+
+const myAWSNotifier = new Notifier();
+const notifierResponse = myAWSNotifier.call(Jimmy);
+console.log("Respuesta de mi notifier: " + notifierResponse);
