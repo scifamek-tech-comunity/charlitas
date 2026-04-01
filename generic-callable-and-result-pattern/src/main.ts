@@ -1,6 +1,6 @@
 import { GottenValidUsersSTR, NotifiedUsersSTR } from "./domain-events";
 import { User } from "./models";
-import { GetValidUsersUsecase } from "./usecases/get-valid-users.usecase";
+import { GetValidUsersUsecase, GetValidUsersUsecaseImpl } from "./usecases/get-valid-users.usecase";
 import { NotifyUsersUsecase } from "./usecases/notify-users.usecase";
 
 const users: User[] = [
@@ -26,7 +26,7 @@ const users: User[] = [
   },
 ];
 
-const getValidUsersUsecase = new GetValidUsersUsecase();
+const getValidUsersUsecase = new GetValidUsersUsecaseImpl();
 const validUsersDE = getValidUsersUsecase.call(users);
 if ((validUsersDE.code = GottenValidUsersSTR)) {
   console.log("Los usuarios validos son " + validUsersDE.payload);

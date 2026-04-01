@@ -1,0 +1,66 @@
+<mxfile host="65bd71144e">
+    <diagram id="0h9lAuxNqXxg9o8WFQQH" name="Page-1">
+        <mxGraphModel dx="549" dy="109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="teams" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="10" width="155" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="107.5" y="165" width="20" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="140" width="20" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="users" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFCC;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="10" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#86CAFF;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="350" width="20" height="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="load balancer&lt;div&gt;gateway&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#86CAFF;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="210" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;" edge="1" parent="1" source="9" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="195" y="390" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;" edge="1" parent="1" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 6px;&quot;&gt;AsignNewMemberToTeamUsecase&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="120" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; color: rgb(204, 204, 204);&quot;&gt;&lt;div style=&quot;line-height: 19px; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 6px;&quot;&gt;GetUserByIdUsecase&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="265" y="100" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=entityRelationEdgeStyle;html=1;elbow=vertical;" edge="1" parent="1" source="16" target="15">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="50" as="sourcePoint"/>
+                        <mxPoint x="250" y="130" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="205" y="85"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+                    <mxGeometry x="-0.3486" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; color: rgb(204, 204, 204);&quot;&gt;&lt;div style=&quot;line-height: 19px; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(78, 201, 176);&quot;&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 6px;&quot;&gt;GetUserByIdUsecase&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="30" width="70" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
